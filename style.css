@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font-family: Palatino;
+	margin-left: 45px;
+	margin-right: 45px;
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+
+a {
+	color: #999999;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #807dfb !important;
+}
+
+a.selected {
+	text-decoration: underline;
+	color: #807dfb !important;
+}
+
+.name-header {
+	font-family: Arial;
+	font-weight: normal;
+	color: #807dfb !important;
+}
+
+a.name-header {
+	color: #807dfb !important;
+}
+
+.image-subline {
+	margin-top: 10px;
+	color: black;
+}
+
+.image-year {
+	margin-top: 6px;
+	color: #999999;
+	font-weight: bold;
+	font-size: 10px;
+
+}
+
+#sidebar-label a {
+	color: black;
+}
+
+#sidebar-label {
+	margin-top: 35px;
+	font-family: Arial;
+	color: black;
+	font-weight: bold;
+	font-size: 9px;
+	
+}
+
+.works-sidebar {
+	margin-top: 10px;
+	/*margin-left: 5px;*/
+	line-height: 1.8;
+	font-size: 14px;
+}
+
+.column-left {
+	width: 20%;
+}
+
+.column-right {
+	width: 80%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
