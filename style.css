@@ -15,12 +15,21 @@ body {
     float: left;
     width: 50%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
 }
 
 img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
+}
 
+.page-heading {
+	font-family: 'Arial';
+	letter-spacing: 3px;
+	text-align: center;
+}
+.footer {
+	font-size: 12px;
+	font-weight: normal;
+	color: #dddddd;
 }
 
 a {
@@ -73,6 +82,12 @@ a.name-header {
 	
 }
 
+.icon {
+	float: right;
+	padding-top: 23px;
+	font-family: Arial;
+}
+
 .works-sidebar {
 	margin-top: 10px;
 	/*margin-left: 5px;*/
@@ -113,6 +128,11 @@ a.name-header {
 		visibility: hidden;
 	}
 
+	#myTopnav {
+		display: none;
+	}
+
+
 }
 
 @media screen and (min-width: 600px) {
@@ -121,4 +141,19 @@ a.name-header {
 		visibility: hidden;
 	}
 
+	.icon {
+		display: none;
+	}
+
+	#myTopnav {
+		display: block;
+	}
+
+}
+
+
+/*responsive navbar*/
+.topnav .icon {
+    float: right;
+    display: block;
 }
