@@ -100,4 +100,25 @@ a.name-header {
     .column {
         width: 100%;
     }
+
+    body {
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.desktop-table {
+		display: none;
+		visibility: hidden;
+	}
+
+}
+
+@media screen and (min-width: 600px) {
+	.mobile-table {
+		display: none;
+		visibility: hidden;
+	}
+
 }
