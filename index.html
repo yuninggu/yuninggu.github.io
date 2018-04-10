@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html class="gr__testingkenny_tk"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>testingkenny.tk</title>
+    <meta name="description" content="Yuning Gu">
+    <meta name="keywords" content="Yuning Gu">
+    
+  <style></style></head>
+
+      <script type="text/javascript">
+        var iFrequency = 250; // expressed in miliseconds
+        var myInterval = 0;
+
+        // STARTS and Resets the loop if any
+        function startLoop() {
+            if(myInterval > 0) clearInterval(myInterval);  // stop
+            myInterval = setInterval( "doSomething()", iFrequency );  // run
+        }
+
+        function doSomething()
+        {
+            gogo();
+        }
+
+        function gogo() {
+            // alert();
+            document.getElementById("myframe").contentDocument.getElementById("weebly-footer-signup-container").remove();
+        }
+        
+    </script>
+
+  <frameset rows="*" data-gr-c-s-loaded="true">
+    <frame id="myframe" onload="startLoop()" frameborder="0" src="https://yuninggu.weebly.com" name="dot_tk_frame_content" scrolling="auto" noresize="" style=".weebly-footer-signup-container {display: none !important;}">
+  </frameset>
+
+</html>
